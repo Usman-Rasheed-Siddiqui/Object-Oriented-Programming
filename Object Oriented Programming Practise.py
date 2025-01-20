@@ -108,8 +108,8 @@ class BankAccount:
         self.name = self.get_account_name()
         self.account_names = self.creating_file_of_names()
         self.accountant_info = self.get_accountant_info()
-        self.balance = self.accountant_info[1]
-        self.balance_length = len(str(self.balance))
+        self.current_balance = self.accountant_info[1]
+        self.balance_length = len(str(self.current_balance))
 
         # For headings to be Bold And Italic
         self.bold_italic = '\033[1m\033[3m'
@@ -126,7 +126,7 @@ class BankAccount:
 
         # Adjusting Name row dynamically
         row = '| '
-        row += f"{self.name:{col_length_name}} | {self.balance:{col_length_balance}} |"
+        row += f"{self.name:{col_length_name}} | {self.current_balance:{col_length_balance}} |"
         print(row.strip())
 
     def deposit_amount(self):
@@ -204,9 +204,7 @@ def main():
                 Bank.exit_program()
             else:
                 print("Please enter a valid choice")
-
             Bank.main_menu()
-
 
     elif choice == '2':
         Bank.new_account()

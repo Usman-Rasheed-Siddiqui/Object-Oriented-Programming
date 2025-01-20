@@ -22,7 +22,7 @@
 # c1 = complex_number()
 # c1.take_input()
 # c1.print_complex()
-#
+
 # #Method 2
 # class complex_number2:                  # self ensures that the c2 real and imaginary no. do not get mixed up with c3
 #     def take_input(self, r, i):
@@ -43,12 +43,12 @@
 # Question 1
 # class Bank:
 #     def set_loan(self, v):      # Set value of loan
-#         self.check_loan_previously = v
+#         self.loan_take_previously = v
 #
 #     def application_for_loan(self):
-#         if(self.check_loan_previously == True):
+#         if(self.loan_take_previously == True):
 #             print("Loan not granted")
-#         elif(self.check_loan_previously == False):
+#         elif(self.loan_take_previously == False):
 #             print("Loan granted")
 #         else:
 #             print("Invalid Entry")
@@ -56,7 +56,7 @@
 # b1 = Bank()
 # b1.set_loan(True)
 # b1.application_for_loan()
-# b1.check_loan_previously = 123      #Not a good approach
+# b1.loan_take_previously = 123      #Not a good approach
 # b1.application_for_loan()
 #
 # b2 = Bank()
@@ -102,43 +102,42 @@
 
 
 # Class Exercise:
-class Student:
-
-    # For Name:
-    def set_name(self):
-        self.name = input("Enter student's name: ")
-    def get_name(self):
-        return self.name
-
-    # For Roll:
-    def set_roll(self):
-        self.roll = input("Enter student's roll no. : ")
-    def get_roll(self):
-        return self.roll
-
-    # For marks:
-    def set_marks(self):
-        self.marks = []
-        for i in range(1,4):
-            marks  = float(input(f"Enter marks for Quiz {i}: "))
-            self.marks.append(marks)
-    def get_marks(self):
-        return self.marks
-
-    def print_student(self):
-        print(f"Student Name: {self.get_name()} \n Roll No.: {self.get_roll()}")
-        for i in range(1,4):
-            print(f"Quiz{i}: {self.get_marks()[i-1]}")
-
-    def avg(self):
-        return sum(self.get_marks())/3
-
-student = Student()
-student.set_name()
-student.set_roll()
-student.set_marks()
-student.print_student()
-print("Average: ",student.avg())
-
+# class Student:
+#
+#     # For Name:
+#     def set_name(self):
+#         self.name = input("Enter student's name: ")
+#     def get_name(self):
+#         return self.name
+#
+#     # For Roll:
+#     def set_roll(self):
+#         self.roll = input("Enter student's roll no. : ")
+#     def get_roll(self):
+#         return self.roll
+#
+#     # For marks:
+#     def set_marks(self):
+#         self.marks = []
+#         for i in range(1,4):
+#             marks  = float(input(f"Enter marks for Quiz {i}: "))
+#             self.marks.append(marks)
+#     def get_marks(self):
+#         return self.marks
+#
+#     def print_student(self):
+#         print(f"Student Name: {self.get_name()} \n Roll No.: {self.get_roll()}")
+#         for i in range(1,4):
+#             print(f"Quiz{i}: {self.get_marks()[i-1]}")
+#
+#     def avg(self):
+#         return sum(self.get_marks())/3
+#
+# student = Student()
+# student.set_name()
+# student.set_roll()
+# student.set_marks()
+# student.print_student()
+# print("Average: ",student.avg())
 
 
