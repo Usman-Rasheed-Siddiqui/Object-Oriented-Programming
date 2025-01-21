@@ -154,19 +154,26 @@ class BankAccount:
 
     def withdraw_amount(self):
         '''In order to deposit money to the account'''
-        withdraw_amount = float(input("How much amount you want to withdraw: "))
         self.name = self.get_account_name()
 
-        with open("Names.txt", "r") as amount_file:
-            info = amount_file.readlines()
+        while True:
+            withdraw_amount = float(input("How much amount you want to withdraw: "))
 
-         # Modify account balance
-        for i, line in enumerate(info):
-            account_info = line.strip().split(',')
-            if account_info[0] == self.name:
-                # Update balance
-                account_info[1] = str(float(account_info[1]) - withdraw_amount)  # Add the deposited amount
-                info[i] = ','.join(account_info) + '\n'  # Recreate the line with updated balance
+            if withdraw_amount > float(self.accountant_info[1]):
+                print("You don't have enough money in your account. Please enter an appropriate amount.")
+
+            else:
+                with open("Names.txt", "r") as amount_file:
+                    info = amount_file.readlines()
+
+                # Modify account balance
+                for i, line in enumerate(info):
+                    account_info = line.strip().split(',')
+                    if account_info[0] == self.name:
+                        # Update balance
+                        account_info[1] = str(float(account_info[1]) - withdraw_amount)  # Add the deposited amount
+                        info[i] = ','.join(account_info) + '\n'  # Recreate the line with updated balance
+                        break
                 break
 
         # Write the info back to the file
