@@ -121,7 +121,7 @@ class BankAccount:
 
         # Adjusting the header column width dynamically
         header = '| '
-        header += f"{self.bold_italic}{"Account Name":{col_length_name}}{self.reset} | {self.bold_italic}{"Balance":{col_length_balance}}{self.reset} |"
+        header += f"{self.bold_italic}{'Account Name':{col_length_name}}{self.reset} | {self.bold_italic}{'Balance':{col_length_balance}}{self.reset} |"
         print(header.strip())
 
         # Adjusting Name row dynamically
@@ -174,6 +174,7 @@ class BankAccount:
             amount_file.writelines(info)
 
         print(f"Withdraw successful! New balance for {self.name} is {account_info[1]}")
+
 
 Bank = BankAccount()
 
