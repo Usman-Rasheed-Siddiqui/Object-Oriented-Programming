@@ -1,5 +1,4 @@
 
-
 class Student:
     def __init__(self, Name="John",batch="2022",year="Final year"):
         self.name = Name
