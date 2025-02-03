@@ -61,3 +61,8 @@ NewVehicle = Vehicle()      # Create instance of vehicle
 print("Max Speed:",NewVehicle.getMax_Speed(), "km\\h")  # Printing Max Speed
 NewVehicle.seating_capacity()
 print("Fare of Vehicle:",NewVehicle.find_fare(),"PKR")      # Prints Vehicle fare
+
+NewVehicle2 = Vehicle()      # Create instance of vehicle
+print("Max Speed:",NewVehicle2.getMax_Speed(), "km\\h")  # Printing Max Speed
+NewVehicle2.seating_capacity()
+print("Fare of Vehicle:",NewVehicle2.find_fare(),"PKR")      # Prints Vehicle fare

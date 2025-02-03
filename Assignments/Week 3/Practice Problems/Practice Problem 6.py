@@ -1,3 +1,4 @@
+
 class Restaurant:
     '''Class that includes details about a restaurant.'''
 
@@ -79,3 +80,15 @@ Customer1.customer_order("Usman", ['Pasta','Biryani'])
 Customer1.print_menu()
 Customer1.print_book_table()
 Customer1.print_customer_orders()
+
+Customer2 = Restaurant()
+Customer2.get_menu_items()
+Customer2.get_customer_orders()
+Customer2.get_book_table()
+Customer2.add_item_to_menu('Karhai', 1000)
+Customer2.add_item_to_menu('Pulao', 800)
+Customer2.book_tables("Usman",4)
+Customer2.customer_order("Usman", ['Karhai'])
+Customer2.print_menu()
+Customer2.print_book_table()
+Customer2.print_customer_orders()

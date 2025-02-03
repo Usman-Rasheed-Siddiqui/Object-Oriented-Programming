@@ -60,3 +60,8 @@ Stock1 = Inventory()    # Creates an instance for 1st stocks
 Stock1.stock()
 Stock1.stock()
 Stock1.show_details()
+
+Stock2 = Inventory()    # Creates an instance for 2nd stocks
+Stock2.stock()
+Stock2.stock()
+Stock2.show_details()

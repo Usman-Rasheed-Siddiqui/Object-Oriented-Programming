@@ -34,3 +34,9 @@ NewCircle.getRadius()
 NewCircle.getColor()
 print(f"Circumference: {NewCircle.Circumference()} units")      # Printing calculated Circumference
 print(f"Area: {NewCircle.Area()} square units")     # Printing calculated Area
+
+NewCircle2 = Circle()    # Creating an instance of the class Circle
+NewCircle2.getRadius()
+NewCircle2.getColor()
+print(f"Circumference: {NewCircle2.Circumference()} units")      # Printing calculated Circumference
+print(f"Area: {NewCircle2.Area()} square units")     # Printing calculated Area

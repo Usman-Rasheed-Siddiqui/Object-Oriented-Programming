@@ -51,3 +51,9 @@ Std.getRoll()       # To get the roll number of the student
 Std.getMarks()      # To get the marks of 3 quizzes of the student
 Std.getStudent()    # Print student's info
 print("Average of 3 quizzes:",Std.avg())           # Prints average of the three quizzes
+
+Std2 = Student()     # Creating an instance of the class
+Std2.getName()       # To get the name of the student
+Std2.getRoll()       # To get the roll number of the student
+Std2.getMarks()      # To get the marks of 3 quizzes of the student
+Std2.getStudent()    # Print student's info
