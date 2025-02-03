@@ -1,0 +1,14 @@
+Aggregation: 
+-"has a" relationship
+- Unidirectional
+- If independent is destroyed, dependent also gets destroyed.
+	--For e.g, if wheels are destroyed, car also has no use left.
+
+Composition:
+- "part of"relationship
+- Bidirectional
+- If anyone is destroyed, the other will also be destroyed.
+	-- If a person's heart or the person is destroyed, the other will not survive. 
+
+Association:
+- Does not use the associated class objects
