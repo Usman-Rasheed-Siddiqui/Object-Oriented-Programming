@@ -27,5 +27,7 @@ class Current_Account(Bank_Account):
         print(f"Withdrawal Amount: {self.withdrawl_limit}")
 
 
-sa = Saving_Account()
-sa.showAccountInfo()
+sa1 = Saving_Account()
+sa1.showAccountInfo()
+sa2 = Current_Account()
+sa2.showAccountInfo()

@@ -34,3 +34,5 @@ class Clerk(Employee):
 
 c1 = Clerk(4, "Dolphins")
 c1.ShowInfo()
+c2 = Manager()
+c2.ShowInfo()
