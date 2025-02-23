@@ -1,5 +1,4 @@
 
-
 class Point:
     '''Class to assign values to xy-coordinates'''
     def __init__(self, xcoord= 0, ycoord= 0):
